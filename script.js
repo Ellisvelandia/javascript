@@ -34,6 +34,17 @@ console.log("awesome" + words1 + "is better" + words2);
 // undefined
 // null
 
-
 // template literal
 console.log(`how ${words1} while drinks ${words2}`);
+
+// types alerts
+// alert();
+// prompt();
+// confirm();
+//
+
+let name = prompt("¿what is your name?");
+
+alert(`welcome, to the jungle ${name}`);
+
+confirm("¿do you want follow?");
