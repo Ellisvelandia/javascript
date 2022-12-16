@@ -61,7 +61,7 @@
 
 // document.write(numbers2);
 
-let numbers = [1, 4, 6, 7, 44, 12, 14];
+// let numbers = [1, 4, 6, 7, 44, 12, 14];
 
 // let numbers = [1, 4, 6, 7, [44, 12, 14]];
 
@@ -83,6 +83,47 @@ let numbers = [1, 4, 6, 7, 44, 12, 14];
 
 // let numbers1 = numbers.toString();
 
-let numbers1 = numbers.reduce((add, value) => { return add + value });
+// let numbers1 = numbers.reduce((add, value) => { return add + value });
 
-document.write(numbers1)
+// document.write(numbers1)
+
+
+
+// exercise
+
+let numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
+
+let by = [];
+let odd = [];
+
+for (let i = 0; i < numbers.length; i++) {
+
+  if (i % 2 == 0) {
+    by.push(i)
+  } else {
+    odd.push(i)
+  }
+}
+document.write(`the numbers by are ${by}` + "<br>")
+document.write(`the numbers odd are ${odd}` + "<br>")
+
+
+// fibonacci series
+
+let fibonacci = () => {
+  let a = 0;
+  let b = 1;
+  let secuency = [0];
+
+  for (let i = 0; i <= 10; i++) {
+    let c = a;
+
+    a = b;
+    b = a + c;
+
+    secuency.push(a + "<br>");
+  };
+  document.write(secuency)
+}
+
+fibonacci()
